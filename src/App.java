@@ -49,5 +49,6 @@ public class App {
             }else{
             System.out.println("Złe dane");
             }
+            scanner.close();
     }
 }
