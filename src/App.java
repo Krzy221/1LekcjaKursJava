@@ -26,10 +26,28 @@ public class App {
              scanner.close();
               */
    
-          //Komentarz dodany 
-          //Komentarz 2
+            
+              Scanner scanner = new Scanner(System.in); 
+            
+              System.out.println("Podaj pierwszą liczbe");
+              int a = scanner.nextInt();
+            
+            
+              System.out.println("Podaj + lub -");
+              scanner.nextLine();
+              String o = scanner.nextLine();
+            
+            
+              System.out.println("Podaj drugą liczbe");
+              int b = scanner.nextInt();
+              
 
-
-          
+            if(o.equals("+")){
+            System.out.println("Wynik to "+ (a+b));
+            }else if(o.equals("-")){
+            System.out.println("Wynik to "+ (a-b));
+            }else{
+            System.out.println("Złe dane");
             }
+    }
 }
