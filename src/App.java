@@ -10,7 +10,7 @@ public class App {
             System.out.println("Twoje imię to " + firstName);
             scanner.close();
             */
-             
+             /*
                 Scanner scanner = new Scanner(System.in); 
             
                 System.out.println("Podaj pierwszą liczbe");
@@ -24,9 +24,11 @@ public class App {
                 
                 System.out.println("Wynik: " + (a + b + c));
              scanner.close();
-              
+              */
    
-          
+          //Komentarz dodany 
+
+
           
             }
 }
