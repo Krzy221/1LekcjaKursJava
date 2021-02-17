@@ -25,7 +25,7 @@ public class App {
                     
                     System.out.println("Wynik: " + (a + b + c));
                  scanner.close();
-                 */
+               */
               /* //Prosty kalkulator (dodawanie i odejmowanie)
               Scanner scanner = new Scanner(System.in); 
             
@@ -49,18 +49,18 @@ public class App {
              }
              scanner.close();
             */
-            
+            /* //Kalkulator Switch
             Scanner scanner = new Scanner(System.in); 
             
             System.out.println("Podaj pierwszą liczbe");
-            int a = scanner.nextInt();
+             int a = scanner.nextInt();
           
             System.out.println("Podaj + lub - lub * lub /");
-            scanner.nextLine();
-            String o = scanner.nextLine();
+             scanner.nextLine();
+             String o = scanner.nextLine();
           
             System.out.println("Podaj drugą liczbe");
-            int b = scanner.nextInt();
+             int b = scanner.nextInt();
            
             scanner.close();
             
@@ -80,8 +80,38 @@ public class App {
             default:
                   System.out.println("Złe dane");
                   break;
-         
-        }
-    
-    }
+            }
+            */
+           
+           
+           
+           
+int wynik = 0;
+Scanner scanner = new Scanner(System.in);
+        
+String[][] dane = {
+   {"Więcej niż jedno zwierzę","stado","klucz","dwa","owca","lama"},
+   {"Sporty na s","sztafeta","skok o tyczce", "skoki narciarskie", "sumo", "szachy"}
+      };
+        
+            for(int i = 0; i < dane.length; i++){
+    System.out.println(dane[i][0]); 
+    String odp = scanner.nextLine(); 
+    boolean OK = false;                               //boolean  Fałsz 
+              
+      for(int it = 1; it < dane[i].length; it++){
+          if(odp.equals(dane[i][it])){
+          OK = true;                                  // Prawda
+          System.out.println( "BRZDĘK" );
+          wynik += it*10;
+                }
+              }
+if(!OK){                                               //Fałsz
+ System.out.println("X");
 }
+    }      
+            
+System.out.println("Twój wynik to "+wynik);
+scanner.close();
+          }
+        }
