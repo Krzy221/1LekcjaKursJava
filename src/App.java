@@ -97,9 +97,9 @@ String[][] dane = {
             for(int i = 0; i < dane.length; i++){
     System.out.println(dane[i][0]); 
     String odp = scanner.nextLine(); 
-    boolean OK = false;                               //boolean  Fałsz 
+    boolean OK = false;                               //boolean  Fałsz.
               
-      for(int it = 1; it < dane[i].length; it++){
+      for(int it = 1; it < dane[i].length; it++){     
           if(odp.equals(dane[i][it])){
           OK = true;                                  // Prawda
           System.out.println( "BRZDĘK" );
