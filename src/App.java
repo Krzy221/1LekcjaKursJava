@@ -109,19 +109,18 @@ if(!OK){                                               //Fałsz
     }      
             
 System.out.println("Twój wynik to "+wynik);
-scanner.close();
 
 */
 Scanner scanner = new Scanner(System.in);
-int ZL = (int)(Math.random() * 101);
-int LP = 0;
+int ZL = (int)(Math.random() * 101);      
+int LP = 0;                               
 
 //System.out.println(ZL); Test 
 
-while(LP < 5){
+while(LP < 10){
    LP++;
    System.out.println("Podaj liczbę");
-   int OWP = scanner.nextInt();
+   int OWP = scanner.nextInt();             
    if(ZL < OWP){
       System.out.println("Liczba jest za duża");}
       
