@@ -82,9 +82,6 @@ switch(o){
       break;
             }
             */
-           
-
-
 /*  //Familiada
 int wynik = 0;
 Scanner scanner = new Scanner(System.in);
@@ -113,6 +110,31 @@ if(!OK){                                               //Fałsz
             
 System.out.println("Twój wynik to "+wynik);
 scanner.close();
-*/   
+
+*/
+Scanner scanner = new Scanner(System.in);
+int ZL = (int)(Math.random() * 101);
+int LP = 0;
+
+//System.out.println(ZL); Test 
+
+while(LP < 5){
+   LP++;
+   System.out.println("Podaj liczbę");
+   int OWP = scanner.nextInt();
+   if(ZL < OWP){
+      System.out.println("Liczba jest za duża");}
+      
+   else if(ZL > OWP){ 
+       System.out.println("Liczba jest za mała");}
+       
+   else if(ZL == OWP){
+      System.out.println("Wygrałeś");
+      break;}
+   
+   if(LP == 5){
+      System.out.println("Przegrałeś");}
+          
+      }
    }
 }
