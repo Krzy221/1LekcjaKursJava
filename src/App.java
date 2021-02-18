@@ -18,11 +18,11 @@ int x = 0;
 boolean B = false;
         
 String[][] woj = {
-{"Śląsk" , "Katowice"},
-{"Wielkopolskie" , "Poznań"},
-{"Małopolskie" , "Kraków"},
-{"Mazowieckie" , "Warszawa"},
-{"Łódzkie" , "Łódź"},
+ {"Śląsk" , "Katowice"},
+ {"Wielkopolskie" , "Poznań"},
+ {"Małopolskie" , "Kraków"},
+ {"Mazowieckie" , "Warszawa"},
+ {"Łódzkie" , "Łódź"},
 };
 		
         
