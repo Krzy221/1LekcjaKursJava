@@ -2,7 +2,55 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-     
+      
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Wpisz województwo: ");
+
+System.out.println(wartosc(scanner.nextLine()));
+        
+scanner.close();
+    }
+static String wartosc( String Woj ){ 
+
+int x = 0;
+
+boolean B = false;
+        
+String[][] woj = {
+{"Śląsk" , "Katowice"},
+{"Wielkopolskie" , "Poznań"},
+{"Małopolskie" , "Kraków"},
+{"Mazowieckie" , "Warszawa"},
+{"Łódzkie" , "Łódź"},
+};
+		
+        
+        
+while (x < woj.length){
+   if(Woj.equals(woj[x][0])){
+   B = true;
+   break;
+}
+x++;
+            
+}
+
+if(B){
+   return "Stolicą jest: " +woj[x][1];
+}else{
+    return "Złe Dane";
+}
+
+        
+
+
+       
+
+    }
+
+
+}
 /* //Przykład wprowadzania danych  
 System.out.println("Podaj swoje imię");
 Scanner scanner = new Scanner(System.in); 
@@ -81,7 +129,7 @@ switch(o){
       System.out.println("Złe dane");
       break;
             }
-            */
+   */
 /*  //Familiada
 int wynik = 0;
 Scanner scanner = new Scanner(System.in);
@@ -111,6 +159,7 @@ if(!OK){                                               //Fałsz
 System.out.println("Twój wynik to "+wynik);
 
 */
+/* // Loteria
 Scanner scanner = new Scanner(System.in);
 int ZL = (int)(Math.random() * 101);      
 int LP = 0;                               
@@ -135,5 +184,5 @@ while(LP < 10){
       System.out.println("Przegrałeś");}
           
       }
-   }
-}
+   */
+   
