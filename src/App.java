@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-
+    
+         App2 APP = new App2(); // Służy do nadawania nazwie zmiennej z pliku App2 która słuzy do indentyfikacji dalej
+            System.out.println(APP.name+" to "+APP.race+" który ma"+APP.age+" Lat");
        
 
     }
