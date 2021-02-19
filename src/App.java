@@ -2,14 +2,21 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-      
-Scanner scanner = new Scanner(System.in);
 
-System.out.println("Wpisz województwo: ");
+       
 
-System.out.println(wartosc(scanner.nextLine()));
+    }
+
+
+}
+/*     
+         Scanner scanner = new Scanner(System.in);
+
+         System.out.println("Wpisz województwo: ");
+
+         System.out.println(wartosc(scanner.nextLine()));
         
-scanner.close();
+         scanner.close();
     }
 static String wartosc( String Woj ){ 
 
@@ -29,28 +36,20 @@ String[][] woj = {
         
 while (x < woj.length){
    if(Woj.equals(woj[x][0])){
-   B = true;
-   break;
-}
-x++;
+      B = true;
+      break;
+   }
+
+   x++;
             
 }
 
 if(B){
    return "Stolicą jest: " +woj[x][1];
 }else{
-    return "Złe Dane";
+   return "Złe Dane";
 }
-
-        
-
-
-       
-
-    }
-
-
-}
+*/
 /* //Przykład wprowadzania danych  
 System.out.println("Podaj swoje imię");
 Scanner scanner = new Scanner(System.in); 
@@ -185,4 +184,19 @@ while(LP < 10){
           
       }
    */
+/* 
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Podaj liczbe");
+   int a = scanner.nextInt();
+
+if(a%2 == 0){
+   System.out.println("Liczba jest parzysta");}
+else if(a%2 > 0){
+   System.out.println("Liczba jest nieparzysta");
+}
+else{
+   System.out.println("Błędne dane");
+}        
+*/
    
